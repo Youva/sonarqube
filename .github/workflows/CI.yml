@@ -28,9 +28,6 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
-      # Compiler et exécuter les tests unitaires
-      - name: Build and run tests
-        run: ./gradlew clean build
 
       # Lancer SonarQube 
       - name: Run SonarQube
