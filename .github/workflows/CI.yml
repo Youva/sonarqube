@@ -31,4 +31,4 @@ jobs:
 
       # Lancer SonarQube 
       - name: Run SonarQube
-        run: ./gradlew sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: ./gradlew sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }} -Dsonar.organization=mahdi01x
