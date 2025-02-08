@@ -21,8 +21,8 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Build without tests
-        run: ./gradlew clean build -x test
+      - name: Build and run tests
+        run: ./gradlew clean build
 
       - name: Run SonarQube analysis
         run: ./gradlew sonar -Dsonar.token=${{ secrets.SONAR_TOKEN }} -Dsonar.host.url=https://sonarcloud.io
