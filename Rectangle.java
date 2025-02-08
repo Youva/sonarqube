@@ -36,6 +36,7 @@ public class Rectangle {
 
     public double getHeight() {
         return height;
+
     }
 
     public double getArea() {
