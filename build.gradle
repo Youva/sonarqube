@@ -238,13 +238,13 @@ subprojects {
     springSecurityVersion = '6.4.2'
     elasticSearchClientVersion = '7.17.27'
   }
-
+/*
   sonar {
     properties {
       property 'sonar.moduleKey', project.group + ':' + project.name
     }
   }
-
+*/
   sourceSets {
     test {
       resources {
